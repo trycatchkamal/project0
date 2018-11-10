@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Product 0 - Financial Advisor
           </a>
         </header>
       </div>
