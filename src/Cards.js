@@ -23,10 +23,14 @@ export default class Cards extends Component{
     render(){
       console.log("cards render "+ JSON.stringify(this.state.currentQuestion));
       return (
-        <div className="container" style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-          <div className="row">
-            <Card id="questionCard" question={this.state.currentQuestion}/>
-            <button type="button" className='btn btn-outline-primary btn-default' onClick={this.moveToNextQuestion} >Next</button>
+        <div className="container-fluid">
+          <div className="row d-flex flex-row justify-content-center ">
+            <Card id="questionCard" className="col-6" question={this.state.currentQuestion}/>
+          </div>
+          <div className="row d-flex d-flex justify-content-end" style={{marginTop:'25px'}}>
+            <div className="col-3"> </div>
+              <button type="button" className='col-6 btn btn-outline-primary btn-default' onClick={this.moveToNextQuestion} >Next</button>
+            <div className="col-3"> </div>
           </div>
         </div>
       );

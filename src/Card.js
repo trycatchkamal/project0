@@ -13,10 +13,9 @@ export default class Card extends Component{
   render(){
     const question=this.props.question;
     return (
-      <div className="container" >
       <div className="d-flex align-content-center justify-content-start">
       <form >
-      <p className="text-primary">{question.title}</p>
+      <h4 className="text-primary">{question.title}</h4>
       {question.options.map(function(option, i){
         return <div className="custom-control custom-radio">
         <input type="radio" name="questionChoice" id={i} className="custom-control-input"/>
@@ -24,7 +23,6 @@ export default class Card extends Component{
         </div>;
       })}
       </form>
-      </div>
       </div>
     );
   }
