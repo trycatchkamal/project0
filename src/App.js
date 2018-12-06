@@ -4,10 +4,9 @@ import Cards from './Cards'
 import {questions} from './Questions'
 
 export default class App extends Component {
-  // eslint-disable-next-line
-  constructor(props){
-    super(props);
-  }
+  // constructor(props){
+  //   super(props);
+  // }
 
   render() {
     return (

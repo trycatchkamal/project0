@@ -117,6 +117,6 @@ export const questions={
     title:"Do you have any % of your investment in any (negatively correlated assets) of the following ? <Research and add list)",
     type: "option",
     options: ["Yes","No"],
-    nextQuestion: []
+    nextQuestion: ["end"]
   }
 }
